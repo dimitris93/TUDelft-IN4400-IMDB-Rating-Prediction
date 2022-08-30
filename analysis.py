@@ -42,6 +42,7 @@ x = df[['num_voted_users',
         'title_year']]
 y = df['imdb_score']
 
+# ---
 val = 0
 for i in range(0, 100):
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25)
